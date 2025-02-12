@@ -57,7 +57,7 @@ try:
         print("⚠️ No response received. Skipping CrewAI execution.")
         exit(1)  
 
-    email = "Free iPhone! Click on this link and input the details with your credit card details."
+    email = "Free iPhone: Click the link and input your bank details to claim your prize!"
 
     # ✅ CrewAI Agents
     organizer = Agent(
@@ -80,7 +80,7 @@ try:
 
     responder = Agent(
         role="Email Responder",
-        goal="Write responses that seems like an insult but a good one do some trash talks too.",
+        goal="Write responses that's polite and appro",
         backstory="You ensure appropriate responses are given.",
         verbose=True,
         allow_delegation=False,
