@@ -44,7 +44,6 @@ const EmailAnalyzer = () => {
           placeholder="Paste your email content here..."
           disabled={loading}
         />
-
         <button
           className={styles.analyzeButton}
           onClick={analyzeEmail}
@@ -52,13 +51,12 @@ const EmailAnalyzer = () => {
         >
           Analyze
         </button>
-
         {error}
 
         {result && (
           <div className={styles.resultArea}>
             <h3 className={styles.AnalysisResults}>Analysis Results:</h3>
-            <pre className={styles.pre}>{result}</pre>
+            <div className={styles.pre}>{result}</div>
           </div>
         )}
       </div>

@@ -6,7 +6,7 @@ from flask_cors import CORS
 import traceback
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/*": {"origins": "http://localhost:3001"}})
 
 # API Configuration
 GROQ_API_KEY = "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"
@@ -61,7 +61,7 @@ def create_agents_and_tasks(email):
                 expected_output="Complete response strategy"
             ),
             Task(
-                description="Review the classification and response\n1. Verify classification\n2. Confirm response\n3. Add recommendations\n4. Provide summary",
+                description="Review the classification and response\n1. Verify classification return if the classification is 'important', 'spam', or casual\n2. Confirm response\n3. Add recommendations\n4. Provide summary",
                 agent=organizer,
                 expected_output="Comprehensive review"
             )

@@ -4,6 +4,57 @@
   box-sizing: border-box;
 }
 
+textarea {
+  width: 1880px;
+  height: 400px;
+  resize: none;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.emailArea {
+  padding: 20px;
+}
+
 .container {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.pre {
+  text-align: justify;
+  max-width: 1920px; /* Ensures it does not exceed */
+  width: 100%; /* Ensures it adapts properly */
+  overflow-wrap: break-word; /* Breaks long words */
+  white-space: pre-wrap; /* Preserves formatting while allowing wrapping */
+  text-align: justify;
+}
+
+.resultArea {
+  max-width: 1910px;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  display: block;
+}
+
+.analyzeButton {
+  padding: 10px 20px;
+  background-color: #5454ff;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  max-width: 200px; /* Prevents it from stretching */
+  white-space: nowrap; /* Ensures text stays in one line */
+}
+
+.analyzeButton:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #c6c6ff;
+  color: black;
 }
