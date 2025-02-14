@@ -58,3 +58,27 @@ textarea {
   background-color: #c6c6ff;
   color: black;
 }
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.gmailButton {
+  padding: 10px 20px;
+  background-color: #db4437;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gmailButton:hover {
+  background-color: #c53929;
+}
+
+.error {
+  color: #db4437;
+  margin-top: 10px;
+}
